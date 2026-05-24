@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ashwin Suryaa | Portfolio</title>
+
+  <!-- ✅ Montserrat Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+<header class="hero">
+  
+  <div class="hero-overlay">
+    <div class="hero-content">
+      <h1>Ashwin Suryaa</h1>
+      <pclass="tagline">Electronics and Communication Engineer '25 | Software Developer | Embedded & IoT</p>
+    </div>
+  </div>
+  
+  <script>
+  history.scrollRestoration = "manual";
+
+  window.addEventListener("pageshow", () => {
+    const start = window.scrollY;
+
+    if (start > 0) {
+      let current = start;
+
+      function glideToTop() {
+        current -= current * 0.08; /* smooth easing */
+
+        if (current > 1) {
+          window.scrollTo(0, current);
+          requestAnimationFrame(glideToTop);
+        } else {
+          window.scrollTo(0, 0);
+        }
+      }
+
+      requestAnimationFrame(glideToTop);
+    }
+  });
+</script>
+
+
+</head>
+<hr class="section-line">
+
+<body>
+<body>
+  <!-- STATIC HEADER -->
+  <header class="navbar">
+  <div class="nav-left">
+    Ashwin Suryaa G V,
+  </div>
+
+  <div class="nav-center"></div>
+
+  <nav class="nav-right">
+
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+
+    <a href="resume.pdf" target="_blank" class="resume-btn">Resume</a>
+
+    
+    <div class="theme-switch">
+      <label class="switch">
+        <input type="checkbox" id="themeToggle" onchange="toggleTheme()">
+        <span class="slider">
+          <span class="icon sun">☀️</span>
+          <span class="icon moon">🌙</span>
+        </span>
+      </label>
+    </div>
+
+  </nav>
+</header>
+
+
+
+  <!-- Main -->
+  <main class="container main"><section id="about" class="about-section">
+  <h2>About</h2>
+
+  <div class="about-box">
+    <p class="about-intro">
+     Hey! I’m Ashwin Suryaa , an Electronics and Communication Engineer with a strong interest in Software and Development. I enjoy building real-world solutions using programming and modern technologies, and I am actively seeking opportunities to learn, grow, and contribute to impactful software projects.
+    </p>
+
+    <ul class="about-list">
+      <li>Graduated from K.L.N. College of Engineering with CGPA  of 7.49 and achieved a solid academic record while actively exploring software development and implementing concepts through projects.</li>
+      <li>Skilled in programming languages such as C, C++, Java, Python, and SQL and have experience in VS Code, Google Colab, Android Studio, Git, and GitHub projects which include Machine Learning and Embedded projects . </li>
+      <li>My notable projects include focusing on IoT and ML, which represents the project SmartAgroBiz  ( ML-powered farming and e-commerce solution using Flutter, Supabase, and Random Forest models ) , Developed Embedded and IoT projects such as Smart Signal Management for Emergency Vehicles and a Smart Energy Management System to improve real-time control and operational efficiency.
+</li>
+    </ul>
+  </div>
+</section>
+
+
+
+
+
+
+    </section>
+
+   <section id="education">
+  <div class="container">
+
+    <h2>Education</h2>
+
+    <div class="edu-item">
+      <h3>B.E – Electronics and Communication Engineering (ECE)</h3>
+      <p class="edu-meta">K.L.N.COLLEGE OF ENGINEERING • 2021 - 2025</p>
+      <p class="edu-cgpa">CGPA: 7.50</p>
+    </div>
+
+    <div class="edu-item">
+      <h3>HSLC Higher Secondary</h3>
+      <p class="edu-meta">MARY ANN MAT.HR.SEC.SCHOOL • 2020</p>
+       <p class="edu-item">Bio Math Score - 84.4%</p>
+    </div>
+ <div class="edu-item">
+      <h3>SSLC Secondary</h3>
+      <p class="edu-meta">MARY ANN MAT.HR.SEC.SCHOOL • 2018</p>
+       <p class="edu-item">Score - 82.2%</p>
+    </div>
+  </div>
+</section>
+
+    </section>
+<section id="skills" class="card">
+  <h2>SKILLS</h2>
+
+  <!-- Technical Skills -->
+  <h3>Technical Skills</h3>
+  <div class="chips">
+    <span class="chip">C</span>
+    <span class="chip">C++</span>
+    <span class="chip">Java</span>
+    <span class="chip">Python</span>
+    <span class="chip">SQL</span>
+  </div>
+
+  <br>
+
+  <!-- Soft Skills -->
+  <h3>Soft Skills</h3>
+  <div class="chips">
+    <span class="chip">Leadership</span>
+    <span class="chip">Critical Thinking</span>
+    <span class="chip">Creativity</span>
+    <span class="chip">Problem Solving</span>
+  </div>
+
+  <br>
+
+  <!-- Development Tools -->
+  <h3>Development Tools</h3>
+  <div class="chips">
+    <span class="chip">VS Code</span>
+    <span class="chip">Google Colab</span>
+    <span class="chip">Android Studio</span>
+    <span class="chip">Git</span>
+    <span class="chip">GitHub</span>
+  </div>
+</section>
+
+   <section id="projects" class="card">
+  <h2>PROJECTS</h2>
+
+  <div class="project-grid">
+
+    <!-- Project 1 -->
+    <div class="project">
+      <h3>SMARTAGROBIZ: ML-POWERED FARMING AND E-COMMERCE SOLUTION</h3><br>
+      <p><strong>MAY 2025</strong></p>
+      <p>
+        An e-commerce mobile app using Flutter and Supabase to connect farmers with local buyers, enabling
+        real-time product listing and order management.
+      </p>
+      <p>
+        Developed a Random Forest-based model using historical district-level data to recommend region-specific
+        crops by predicting yield, saturation, and profitability metrics.
+      </p>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project">
+      <h3>SMART SIGNAL MANAGEMENT FOR EMERGENCY VEHICLES USING IoT</h3>
+      <p><strong>MAY 2024</strong></p>
+      <p>
+        An IoT technology to prioritize and manage traffic signals, ensuring swift and unobstructed passage for
+        emergency vehicles.
+      </p>
+      <p>
+        An eminent way to clear the congestion of vehicles and to provide a way for the emergency vehicle in traffic
+        light with help of GPS Sensor.
+      </p>
+    </div>
+          
+    <!-- Project 3 -->
+    <div class="project">
+      <h3>SMART ENERGY MANAGEMENT SYSTEM USING IOT</h3><br>
+      <p><strong>FEB 2024</strong></p>
+      <p>
+        An intelligent energy management system optimizes power consumption by utilizing advanced monitoring and
+        control mechanisms.
+      </p>
+      <p>
+        It collects real-time data, enabling users to track energy usage. With remote control capabilities, the system
+        ensures seamless management of energy resources, fostering cost-effectiveness.
+      </p>
+    </div>
+
+  </div>
+</section>
+    </section>
+<section id="certifications" class="card">
+  <h2>Certifications</h2>
+
+  <ul class="list" id="certList">
+    <li>C Programming Basics (LinkedIn)</li>
+    <li>Introduction to Industry 4.0 and Industrial Internet of Things (NPTEL)</li>
+    <li>The Joy of Computing Python 2022 (NPTEL)</li>
+    <li>Python 3.4.3 (Spoken Tutorial, IIT Bombay)</li>
+    <li>Basic JAVA Programming (LinkedIn)</li>
+  </ul>
+</section>
+
+<p>If you are Interested, I'm text away! </p>
+
+   <section id="contact" class="card">
+  <h2>Contact</h2>
+
+  <div class="contact-links">
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/919994241626" target="_blank" class="contact-link">
+      WhatsApp
+    </a>
+
+    <!-- Email -->
+    <a href="mailto:ashwinsuryaa93@gmail.com" class="contact-link">
+      Email
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://linkedin.com/in/ashwinsuryaa" target="_blank" class="contact-link">
+      LinkedIn
+    </a>
+
+    <!--GitHub-->
+    <a href="https://github.com/AshwinSuryaaGV" target="_blank" class="contact-link">
+      Git-Hub
+    </a>
+
+    <!--LeetCode-->
+    <a href="https://leetcode.com/u/AshwinSuryaaGV/" target="_blank" class="contact-link">
+      LeetCode
+    </a>
+  </div>
+</section>
+
+    <footer class="footer">
+      <p>© 2026 Ashwin Suryaa | All Rights Reserved</p>
+        </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
