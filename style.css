@@ -86,13 +86,7 @@ head{
 }
 
 /* ===== HERO ===== */
-.hero {
-  height: 100vh;
-  background: #6b5441;
-  color: #000000;
-  padding-top: 120px; /* navbar space */
-  text-align: center;
-}
+
 
 .hero h1 {
   font-size: 48px;
@@ -515,8 +509,17 @@ body.white-theme {
   color: #000000;
 }
 
+/* GREY THEME */
+body.grey-theme {
+  background-color: #2f2f2f;
+  color: #ffffff;
+}
 
-
+/* Header */
+body.grey-theme .header {
+  background: #2f2f2f;
+  border-bottom: 1px solid #444;
+}
 
 body.grey-theme .nav a {
   color: #ffffff;
@@ -558,7 +561,20 @@ body.grey-theme .project-links a {
   color: #ffffff;
 }
 
+/* Chips */
+body.grey-theme .chip {
+  background: #3a3a3a;
+  border: 1px solid #555;
+  color: #ffffff;
+}
 
+/* Form */
+body.grey-theme .contact-form input,
+body.grey-theme .contact-form textarea {
+  background: #3a3a3a;
+  border: 1px solid #555;
+  color: #ffffff;
+}
 
 body.grey-theme .contact-form input::placeholder,
 body.grey-theme .contact-form textarea::placeholder {
