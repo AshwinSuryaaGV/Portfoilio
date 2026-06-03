@@ -86,7 +86,13 @@ head{
 }
 
 /* ===== HERO ===== */
-
+.hero {
+  height: 100vh;
+  background: #6b5441;
+  color: #000000;
+  padding-top: 120px; /* navbar space */
+  text-align: center;
+}
 
 .hero h1 {
   font-size: 48px;
