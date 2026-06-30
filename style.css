@@ -28,7 +28,7 @@ html {
   justify-content: space-between;
   align-items: center;
 
-  padding: 0 30px;
+  padding: 30px;
   z-index: 9999;
 
   /* background image */
@@ -86,13 +86,7 @@ head{
 }
 
 /* ===== HERO ===== */
-.hero {
-  height: 100vh;
-  background: #6b5441;
-  color: #000000;
-  padding-top: 120px; /* navbar space */
-  text-align: center;
-}
+
 
 .hero h1 {
   font-size: 48px;
@@ -161,6 +155,73 @@ html{
   justify-content: center;
 }
 
+/* EXPERIENCE SECTION */
+
+#experience{
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* Theme Compatible Heading */
+.experience-title{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: var(--text-color);
+}
+
+/* Rectangle Card */
+.experience-card{
+    max-width: 900px;
+    margin: auto;
+    padding: 30px 40px;
+
+    background: var(--card-bg);
+    color: var(--text-color);
+
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 15px;
+
+    box-shadow: 0 0 25px rgba(138, 43, 226, 0.15);
+
+    text-align: left;
+    transition: 0.3s ease;
+}
+
+.experience-card:hover{
+    transform: translateY(-5px);
+}
+
+/* Role */
+.intern-role{
+    font-size: 2rem;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+/* Company */
+.intern-company{
+    font-size: 1.3rem;
+    color: #9d7cff;
+    margin-bottom: 5px;
+}
+
+/* Date */
+.intern-date{
+    color: gray;
+    margin-bottom: 20px;
+}
+
+/* Bullet Points */
+.intern-points{
+    padding-left: 20px;
+}
+
+.intern-points li{
+    margin-bottom: 12px;
+    line-height: 1.8;
+    color: var(--text-color);
+}
 /* Center text */
 .hero-content {
   text-align: center;
